@@ -7,7 +7,15 @@ class Birthday < Sinatra::Base
   end
 
   get '/' do
-    'Hello user'
+    erb(:index)
   end
+
+  post '/info' do
+    p params
+    @name = params[:name]
+    erb(:test)
+  end
+
+
 
 end
