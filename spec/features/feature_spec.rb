@@ -4,7 +4,7 @@ feature 'birthday check' do
     fill_in('name', with: 'Bob')
     fill_in('day', with: '14')
     select('May', from: 'month')
-    click_button('Submit')
+    click_button('Go!')
     expect(page).to have_content 'Happy Birthday Bob!'
   end
 end
