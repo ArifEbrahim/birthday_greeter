@@ -13,6 +13,7 @@ class Birthday < Sinatra::Base
   post '/info' do
     p params
     @name = params[:name]
+    @day = params[:day]
     erb(:test)
   end
 
