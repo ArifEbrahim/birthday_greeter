@@ -14,6 +14,7 @@ class Birthday < Sinatra::Base
     p params
     @name = params[:name]
     @day = params[:day]
+    @month = params[:month]
     erb(:test)
   end
 
